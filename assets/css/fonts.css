@@ -1,0 +1,34 @@
+/* @font-face {
+  font-family: 'PlayfairDisplay-Bold';
+  src: url('~/assets/fonts/PlayfairDisplay-Bold.ttf?v=4.4.0');
+  src: url('~/assets/fonts/PlayfairDisplay-Bold.ttf?v=4.4.0') url('~/fonts/PlayfairDisplay-Bold.ttf?v=4.4.0') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  src: url('~/assets/fonts/PlayfairDisplay-Regular.ttf?v=4.4.0');
+  src: url('~/assets/fonts/PlayfairDisplay-Regular.ttf?v=4.4.0') url('~/fonts/PlayfairDisplay-Regular.ttf?v=4.4.0') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alice';
+  src: url('~/assets/fonts/Alice-Regular.ttf?v=4.4.0');
+  src: url('~/assets/fonts/Alice-Regular.ttf?v=4.4.0') url('~/fonts/Alice-Regular.ttf?v=4.4.0') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+ */
+
+@font-face {
+  font-family: 'Arciform';
+  font-style: normal;
+  src: url("~assets/fonts/Arciform.otf") format("opentype");
+  font-display: swap;
+}
