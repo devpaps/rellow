@@ -46,6 +46,25 @@
           >
           <span v-show="errors.has('email')" class="error">{{ errors.first('email') }}</span>
         </div>
+
+        <div class="select-package hidden">
+          <p>Välj vilket paket du önskar - <em>Valfritt</em></p>
+          <div class="package-field">
+            <input type="checkbox" id="checkbox1" name="checkboxes">
+            <label for="checkbox1">Liten</label>
+          </div>
+
+          <div class="package-field">
+            <input type="checkbox" id="checkbox2" name="checkboxes" checked>
+            <label for="checkbox2">Mellan</label>
+          </div>
+
+          <div class="package-field">
+            <input type="checkbox" id="checkbox3" name="checkboxes">
+            <label for="checkbox3">Stor</label>
+          </div>
+        </div>
+
         <input type="checkbox" hidden="true" name="form-name" value="Mellan paketet">
         <div class="input-textarea">
           <label class="form-label" for="message">Meddelande:</label>
@@ -77,6 +96,7 @@
         <div class="form-button">
           <input class="button" type="submit" value="Skicka meddelande">
         </div>
+
       </form>
     </div>
   </div>
@@ -86,10 +106,18 @@
 import vuex from "vuex"
 import { mapState, mapGetters, mapActions, mapMutations } from "vuex";
 
+
+
 export default {
   props: ['paketText'],
+  data: () => {
+    return {
+
+    }
+  },
   methods: {
     validateBeforeSubmit(e) {
+
       this.$validator.validate().then(result => {
         console.log(result);
         if (!result) {

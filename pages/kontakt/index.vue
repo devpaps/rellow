@@ -58,7 +58,7 @@
             <input type="checkbox" id="checkbox2" name="checkboxes" >
             <label for="checkbox2">Mellan</label>
           </div>
-          
+
           <div class="package-field">
             <input type="checkbox" id="checkbox3" name="checkboxes" >
             <label for="checkbox3">Stor</label>
@@ -88,7 +88,7 @@
           </div>
           <p>Ni kan läsa mer om vår policy och vår hantering av persondata <nuxt-link to="/policy" class="gdpr-link eyebrow">här</nuxt-link></p>
           <p>Du måste godkänna <nuxt-link class="gdpr-link eyebrow" to="/policy">hantering av persondata</nuxt-link> för att kunna skicka ditt meddelande.</p>
-          
+
         </div>
 
         <div class="form-button">
@@ -107,6 +107,7 @@ export default {
   methods: {
     validateBeforeSubmit(e) {
       this.$validator.validate().then(result => {
+
         console.log(result);
         if (!result) {
           alert("Ange rätt uppgifter i formuläret");
