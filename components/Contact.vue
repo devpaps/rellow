@@ -46,7 +46,7 @@
           >
           <span v-show="errors.has('email')" class="error">{{ errors.first('email') }}</span>
         </div>
-
+        <input type="checkbox" hidden="true" name="form-name" value="Mellan paketet">
         <div class="input-textarea">
           <label class="form-label" for="message">Meddelande:</label>
           <textarea
