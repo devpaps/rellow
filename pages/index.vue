@@ -534,7 +534,7 @@ export default {
           .nope
             text-decoration: line-through
       .pris
-        padding: 0 3rem 3rem
+        margin: 0 3rem 3rem
         div
           background: hsl(216, 100%, 82%)
           padding: 0.5rem
