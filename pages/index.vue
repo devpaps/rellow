@@ -539,10 +539,13 @@ export default {
           background: hsl(216, 100%, 82%)
           padding: 0.5rem
           border-radius: 5px
+          word-break: break-word
           span
             font-size: 1.1rem
             font-weight: bold
             color: #000
+        @media screen and (max-width: 976px)
+          padding: 0 3rem 3rem
 .grid
   display: grid
   grid-template-columns: 1fr 1fr 1fr 1fr
