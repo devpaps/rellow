@@ -7,8 +7,8 @@
       <div class="about-content">
         <h2 class="about-content-title">Hej 👋🏻  <br /> Det är jag som är Lars.</h2>
         <div class="about-content-main">
-          <p><strong>Rellow är startat av mig.</strong> Jag är en 35 årig webbutvecklare som bor i det skogstäta norra Norrland. Jag har gått en utbildning till Webbutvecklare på Högskolan Väst i Trollhättan. Utbildningen har gett mig många verktyg jag kan jobba efter. Men det som jag fastnade för var AngularJS. Jag älskade verkligen att man binda datan direkt i HTML filen. </p>
-          
+          <p><strong>Rellow är startat av mig.</strong> Jag är en 35 årig webbutvecklare som bor i det skogstäta norra Jämtland. Jag har gått en utbildning till Webbutvecklare på Högskolan Väst i Trollhättan. Utbildningen har gett mig många verktyg jag kan jobba efter. Men det som jag fastnade för var AngularJS. Jag älskade verkligen att man binda datan direkt i HTML filen. </p>
+
           <p>Jag har även jobbat med Wordpress och PHP, jag gillade det med, men jag kände att det inte var riktigt min "grej". Jag hittade då Vue.js, och har sedan dess jobbat med det hela tiden. Det är ett helt underbart ramverkt tycker jag, nu på senare tid så kör jag bara med ramverket Nuxt uppe på Vue.js. Jag säger bara 🤙🏻!</p>
 
           <p>Jag tror på bra kommunikation och utmärkt service, varför jag vill ge dig det bästa av båda. Om du letar efter något nytt eller saknar något på er hemsida så är du på rätt ställe. Jag strävar efter att vara moderna inom tekniken och innovativa och erbjuda våra kunder något de vill ha. Jag arbetar hårt för att skapa långvariga och meningsfulla relationer med er</p>
@@ -53,7 +53,7 @@ export default {
       left: 50%
       transform: translate(-50%,-50%)
       font-size: calc(22px + (90 - 22) * ((100vw - 300px) / (1600 - 300)))
-      line-height: 1.3 
+      line-height: 1.3
       font-family: 'Lato', serif
   .about-container
     display: flex
