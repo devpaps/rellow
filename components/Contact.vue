@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1>{{paketText}}</h1>
-    <h3>Vi tycker att alla våra kunder, nya som gamla, ska ha rätt till en bra och enkel support. Hör av dig så hjälper vi dig.</h3>
+    <h3>{{underText}}</h3>
 
     <div class="content wrapper">
       <form
@@ -109,7 +109,7 @@ import { mapState, mapGetters, mapActions, mapMutations } from "vuex";
 
 
 export default {
-  props: ['paketText'],
+  props: ['paketText', 'underText'],
   data: () => {
     return {
 

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Contact paketText="Lilla paketet"/>
+    <Contact paketText="Lilla paketet" underText="Det här paketet är perfekt för dig som vill ha en hemsida som är enkel men som ändå förmedlar ditt budskap på ett bra sätt."/>
   </div>
 </template>
 
