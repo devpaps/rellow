@@ -1,8 +1,8 @@
 <template>
     <section class="footer ">
       <no-ssr>
-        <cookie-law 
-          theme="base" 
+        <cookie-law
+          theme="base"
           buttonText="Jag förstår"
           >
           <div slot="message">
@@ -10,15 +10,15 @@
           </div>
         </cookie-law>
       </no-ssr>
-      
+
       <div class="footer-seperate">
         <div class="footer-text">
           <a href="/" class="logo-home-link">
             <img src="~/assets/images/rellow-full.svg" alt="Logo" class="logo-image-footer">
           </a>
           <p class="footer-text-small">Kontakta mig på <a class="link-dotted" href="mailto:info@rellow.se">info@rellow.se</a></p>
-          <p class="footer-text-small">Rellow är digital webbyrå bygger ett värde åt våra kunders behov på nätet. Vi strävar efter att ligga i framkant inom de tekniska lösningar som finns, allt för att ni ska få en så bra upplevelse som möjligt. </p>
-          <p><nuxt-link to="/policy" class="link-dotted">Integritetspolicy</nuxt-link> </p>
+          <p class="footer-text-small">Rellow är en digital webbyrå som bygger ett värde åt våra kunders behov på nätet. Vi strävar efter att ligga i framkant inom de tekniska lösningar som finns, allt för att ni ska få en så bra upplevelse som möjligt. </p>
+          <p><nuxt-link to="/policy" class="link-dotted">Integritetspolicy</nuxt-link></p>
         </div>
         <div class="footer-links">
           <nuxt-link title="Hem" class="nav-item link-dotted" exact to="/">Hem</nuxt-link>
@@ -61,7 +61,7 @@ export default {
 			this.datum = `${year}`;
 		}
 	},
-  components: { 
+  components: {
     CookieLaw,
     'no-ssr': NoSSR
     }
@@ -118,7 +118,7 @@ export default {
         text-decoration: underline
 
 .link-dotted
-  border-bottom: dotted 1px #fff 
+  border-bottom: dotted 1px #fff
   color: #fff
   &:hover
     color: lightblue
