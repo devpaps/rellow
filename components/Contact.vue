@@ -50,7 +50,7 @@
         <div class="select-package hidden">
           <p>Välj vilket paket du önskar - <em>Valfritt</em></p>
           <div class="package-field">
-            <input type="checkbox" id="checkbox1" name="checkboxes" v-model="liten">
+            <input type="checkbox" id="checkbox1" name="checkboxes" value="checked" v-model="liten">
             <label for="checkbox1">Liten</label>
           </div>
 

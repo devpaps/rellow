@@ -175,7 +175,7 @@
               <img src="~/assets/images/package.svg" alt="Bild på låda">
             </div>
             <div class="box-text">
-              <p>Offertförfrågan</p>
+              <p>Offert</p>
             </div>
             <div class="box-list">
               <ul class="fa-ul">
