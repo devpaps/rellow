@@ -50,22 +50,22 @@
         <div class="select-package hidden">
           <p>Välj vilket paket du önskar - <em>Valfritt</em></p>
           <div class="package-field">
-            <input type="checkbox" id="checkbox1" name="checkboxes">
+            <input type="checkbox" id="checkbox1" name="checkboxes" v-model="liten">
             <label for="checkbox1">Liten</label>
           </div>
 
           <div class="package-field">
-            <input type="checkbox" id="checkbox2" name="checkboxes" checked>
+            <input type="checkbox" id="checkbox2" name="checkboxes" v-model="mellan">
             <label for="checkbox2">Mellan</label>
           </div>
 
           <div class="package-field">
-            <input type="checkbox" id="checkbox3" name="checkboxes">
+            <input type="checkbox" id="checkbox3" name="checkboxes" v-model="stor">
             <label for="checkbox3">Stor</label>
           </div>
         </div>
 
-        <input type="checkbox" hidden="true" name="form-name" value="Mellan paketet">
+        <input type="checkbox" hidden="true" name="form-name" value="Mellan paketet" >
         <div class="input-textarea">
           <label class="form-label" for="message">Meddelande:</label>
           <textarea
@@ -109,7 +109,7 @@ import { mapState, mapGetters, mapActions, mapMutations } from "vuex";
 
 
 export default {
-  props: ['paketText', 'underText'],
+  props: ['paketText', 'underText', 'stor', 'mellan', 'liten'],
   data: () => {
     return {
 
