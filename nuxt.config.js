@@ -103,6 +103,10 @@ module.exports = {
     script: [
       {
         src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"
+      },
+      {
+        src: "https://kit.fontawesome.com/c0cbddae0d.js",
+        crossorigin: "anonymous"
       }
     ],
     link: [
