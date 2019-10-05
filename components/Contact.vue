@@ -1,4 +1,5 @@
 <template>
+<no-ssr>
   <div class="container">
     <h1>{{paketText}}</h1>
     <h3>{{underText}}</h3>
@@ -55,7 +56,7 @@
           </div>
 
           <div class="package-field">
-            <input type="checkbox" id="checkbox2" name="checkboxes" :checked="value">
+            <input type="checkbox" id="checkbox2" name="checkboxes" :value="mellan" :checked="value" v-on:input="mellan = $event.target.value" v-model="mellan">
             <label for="checkbox2">Mellan</label>
           </div>
 
@@ -98,6 +99,7 @@
       </form>
     </div>
   </div>
+</no-ssr>
 </template>
 
 <script>
