@@ -27,8 +27,8 @@
  */
 
 @font-face {
-  font-family: 'Arciform';
+  font-family: "Arciform";
   font-style: normal;
   src: url("~assets/fonts/Arciform.otf") format("opentype");
-  font-display: swap;
+  font-display: auto;
 }
