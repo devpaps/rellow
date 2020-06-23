@@ -1,4 +1,4 @@
-import sanityClient from "./sanityClient";
+const sanityClient = require("./sanityClient");
 
 const routesQuery = `
   {

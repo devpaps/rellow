@@ -1,15 +1,15 @@
 <template>
     <section class="footer ">
-      <no-ssr>
-        <cookie-law
+     
+<!--         <cookie-law
           theme="base"
           buttonText="Jag förstår"
           >
           <div slot="message">
             Den här webbplatsen använder cookies för att du ska få den bästa upplevelsen på vår hemsida. <nuxt-link class="cookie-link" to="/policy">Läs mer här</nuxt-link>
           </div>
-        </cookie-law>
-      </no-ssr>
+        </cookie-law> -->
+    
 
       <div class="footer-seperate">
         <div class="footer-text">
@@ -34,8 +34,9 @@
 </template>
 
 <script>
-import CookieLaw from 'vue-cookie-law';
-import NoSSR from 'vue-no-ssr';
+//import CookieLaw from 'vue-cookie-law';
+//import NoSSR from 'vue-no-ssr';
+//import ClientOnly from 'vue-client-only'
 
 export default {
   props: {
@@ -62,8 +63,7 @@ export default {
 		}
 	},
   components: {
-    CookieLaw,
-    'no-ssr': NoSSR
+
     }
   }
 

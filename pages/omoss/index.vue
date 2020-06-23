@@ -7,7 +7,7 @@
       <div class="about-content">
         <h2 class="about-content-title">Hej 👋🏻  <br /> Det är jag som är Lars.</h2>
         <div class="about-content-main">
-          <p><strong>Rellow är startat av mig.</strong> Jag är en 35 årig webbutvecklare som bor i det skogstäta norra Jämtland. Jag har gått en utbildning till Webbutvecklare på Högskolan Väst i Trollhättan. Utbildningen har gett mig många verktyg jag kan jobba efter. Men det som jag fastnade för var AngularJS. Jag älskade verkligen att man binda datan direkt i HTML filen. </p>
+          <p><strong>Rellow är startat av mig.</strong> Jag är en 36 årig webbutvecklare som bor i det skogstäta norra Jämtland. Jag har gått en utbildning till Webbutvecklare på Högskolan Väst i Trollhättan. Utbildningen har gett mig många verktyg jag kan jobba efter. Men det som jag fastnade för var AngularJS. Jag älskade verkligen att man binda datan direkt i HTML filen. </p>
 
           <p>Jag har även jobbat med Wordpress och PHP, jag gillade det med, men jag kände att det inte var riktigt min "grej". Jag hittade då Vue.js, och har sedan dess jobbat med det hela tiden. Det är ett helt underbart ramverkt tycker jag, nu på senare tid så kör jag bara med ramverket Nuxt uppe på Vue.js. Jag säger bara 🤙🏻!</p>
 
@@ -16,15 +16,15 @@
       </div>
       <div class="imageMe" v-if="inStock">
         <img :src="image" :alt="altText">
-        <em style="text-align: center; display: block; margin-top: 0.5em;">Jag i min fräna <a class="eyebrow" href="https://codepen.io/"> Codepen</a> keps.</em>
+        <em style="text-align: center; display: block; margin-top: 0.5em;">Jag i min <a class="eyebrow" href="https://codepen.io/"> Codepen</a> keps.</em>
       </div>
     </div>
-    <!-- <div class="contact-us-outer wrapper">
+    <div class="contact-us-outer wrapper">
       <div class="contact-us-inner">
-        <h2>Hör av dig till oss</h2>
+        <h2>Hör av dig till mig</h2>
         <a href="/kontakt"><span>👉 här</span></a>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
