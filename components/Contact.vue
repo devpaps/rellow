@@ -241,24 +241,6 @@ export default {
     .form-button
       width: 100%
       margin: 3rem 0 0
-      .animate
-        position: absolute
-        display: block
-        width: 100%
-        height: 100%
-        top: 0
-        left: 0
-        pointer-events: none
-        &::before
-          content: ""
-          display: block
-          position: absolute
-          bottom: -2px
-          left: 0
-          width: 0px
-          height: 2px
-          transition: all 0.4s
-          background: #ff4b5a
     select
       margin-bottom: 35px
       font-size: 16px
