@@ -24,7 +24,7 @@
     "normalize.css": "^8.0.0",
     "nuxt": "^2.14.4",
     "nuxt-imagemin": "^1.0.0",
-    "nuxt-validate": "^0.1.2",
+    "nuxt-validate": "^1.0.1",
     "reboot.css": "^1.0.1",
     "sanity-blocks-vue-component": "^0.1.0",
     "upath": "^1.2.0",
