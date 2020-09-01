@@ -51,7 +51,7 @@ module.exports = {
   generate: {
     fallback: "404.html",
   },
-  buildModules: [
+/*   buildModules: [
     ['@nuxtjs/google-analytics', {
       id: 'UA-121315851-1'
     }]
@@ -60,7 +60,7 @@ module.exports = {
     googleAnalytics: {
       id: process.env.GOOGLE_ANALYTICS_ID
     }
-  },
+  }, */
   /*
    ** Headers of the page
    */
@@ -138,7 +138,7 @@ module.exports = {
    */
   plugins: [
     { src: "~/plugins/vue-scroll-reveal", ssr: false },
-    /* { src: "~/plugins/ga.js", ssr: false }, */
+    { src: "~/plugins/ga.js", mode: 'client' },
     { src: "~/plugins/vee-validate.js", ssr: false }
   ],
 
