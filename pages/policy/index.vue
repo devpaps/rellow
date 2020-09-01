@@ -7,7 +7,7 @@
       <br />
       Du är alltid välkommen att kontakta oss om du har frågor om hur vi behandlar dina personuppgifter. Kontaktuppgifter står sist i denna text.</p>
       <h3>Vad vi samlar in</h3>
-      <p>Denna webbplats använder <nuxt-link to="https://www.google.com/analytics" class="eyebrow">Google Analytics</nuxt-link> för att samla in och processera besöks- och användningsstatistik. Informationen samlas in helt anonymt och hålls på krypterade servrar. Vi samlar även in erat namn, e-postadress för att vi vidare ska kunna hålla kontakten med er.</p>
+      <p>Denna webbplats använder <a href="https://www.google.com/analytics" class="eyebrow">Google Analytics</a> för att samla in och processera besöks- och användningsstatistik. Informationen samlas in helt anonymt och hålls på krypterade servrar. Vi samlar även in erat namn, e-postadress för att vi vidare ska kunna hålla kontakten med er.</p>
       <h3>Hur länge sparar vi dina personuppgifter?</h3>
       <p>Vi sparar aldrig dina personuppgifter längre än vad som är nödvändigt för respektive ändamål. Vissa uppgifter i bokföringen behöver på grund av lagstiftning till exempel sparas minst sju år.</p>
       <h3>Vad är dina rättigheter som registrerad?</h3>

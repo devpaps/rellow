@@ -1,7 +1,7 @@
 <template>
   <section main>
     <div class="hero">
-      <div class="hero-container" v-on:scroll.native="handleScroll">
+      <div class="hero-container" v-on:scroll="handleScroll">
         <div class="hero-image">
           <img src="~/assets/images/header-test2.png" alt="Bild på en hero">
         </div>

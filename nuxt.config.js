@@ -1,9 +1,4 @@
-const sanityClient = require("./sanityClient");
 
-const routesQuery = `
-  {
-    "post": *[_type == "post" && defined(slug.current)]
-  }`;
 
 const routes = [
   {
@@ -55,10 +50,15 @@ module.exports = {
   routes: routes,
   generate: {
     fallback: "404.html",
-    routes: () => {
-      return sanityClient.fetch(routesQuery).then(res => {
-        return [...res.post.map(item => `/blogg/${item.slug.current}`)];
-      });
+  },
+  buildModules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-121315851-1'
+    }]
+  ],
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID
     }
   },
   /*
@@ -138,7 +138,7 @@ module.exports = {
    */
   plugins: [
     { src: "~/plugins/vue-scroll-reveal", ssr: false },
-    { src: "~/plugins/ga.js", ssr: false },
+    /* { src: "~/plugins/ga.js", ssr: false }, */
     { src: "~/plugins/vee-validate.js", ssr: false }
   ],
 
