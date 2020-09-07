@@ -1,6 +1,5 @@
 export default {
   mode: "universal",
-  routes: routes,
   generate: {
     fallback: "404.html",
   },
