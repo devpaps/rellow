@@ -45,7 +45,7 @@ const routes = [
   }
 ];
 
-export default {
+module.exports = {
   mode: "universal",
   routes: routes,
   generate: {
