@@ -104,8 +104,7 @@ export default {
         path: "/sitemap.xml",
         hostname: "https://rellow.se",
         generate: true,
-        gzip: true,
-        routes: routes
+        gzip: true
       }
     ],
     [
