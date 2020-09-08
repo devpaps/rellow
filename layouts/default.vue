@@ -31,12 +31,12 @@ export default {
 		}
 	},
 	created() {
-		if (process.browser) {
+		if (process.client) {
 			window.addEventListener("scroll", this.handleScroll);
 		}
 	},
 	destroyed() {
-		if (process.browser) {
+		if (process.client) {
 			window.removeEventListener("scroll", this.handleScroll);
 		}
 	}

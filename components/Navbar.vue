@@ -58,12 +58,12 @@ export default {
 		}
 	},
 	created() {
-		if (process.browser) {
+		if (process.client) {
 			window.addEventListener("show", this.handleScroll);
 		}
 	},
 	destroyed() {
-		if (process.browser) {
+		if (process.client) {
 			window.removeEventListener("show", this.handleScroll);
 		}
 	}

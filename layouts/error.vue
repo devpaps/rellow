@@ -19,7 +19,7 @@
 
 export default {
   created() {
-    if (process.browser) {
+    if (process.client) {
       window.onNuxtReady((app) => {
         console.log('Wrong page pal! ;)!')
         TweenMax.to('.panel', 1, {scaleY: 1, height: '100vh'});
