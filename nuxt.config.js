@@ -1,5 +1,5 @@
 export default {
-  target: "static",
+  mode: "universal",
   generate: {
     fallback: "404.html",
   },
