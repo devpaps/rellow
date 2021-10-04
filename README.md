@@ -1,22 +1,4 @@
 # rellow_site
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e6b774d1-36a7-4fc6-83ad-61f7d0cfc23b/deploy-status)](https://app.netlify.com/sites/suspicious-mccarthy-001947/deploys)
 
-> My breathtaking Nuxt.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn run dev
-
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## My freelancing website
