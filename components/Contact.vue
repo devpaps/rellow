@@ -1,123 +1,165 @@
 <template>
-<no-ssr>
-  <div class="container">
-    <h1>{{paketText}}</h1>
-    <h3>{{underText}}</h3>
+  <no-ssr>
+    <div class="container">
+      <h1>{{ paketText }}</h1>
+      <h3>{{ underText }}</h3>
 
-    <div class="content wrapper">
-      <form
-        name="contact-form"
-        action="/tack"
-        autocomplete="off"
-        netlify-honeypot="bot-field"
-        method="POST"
-        netlify
-        @submit="validateBeforeSubmit"
-      >
-        <div class="input-field">
-          <label class="form-label" for="name">Ditt namn:</label>
-          <input
-            v-validate="'required|alpha_spaces'"
-            class="form-field inputs"
-            name="namn"
-            placeholder="För- &amp; efternamn"
-            onfocus="this.placeholder = ''"
-            onblur="this.placeholder = 'För- &amp; efternamn'"
-            required
-            v-model="namn"
-            :class="{'input': true, 'is-danger': errors.has('namn') }"
-          >
-          <span v-show="errors.has('namn')" class="error">{{ errors.first('namn') }}</span>
-          <input type="hidden" name="form-name" value="contact-form">
-        </div>
-
-        <div class="input-field">
-          <label class="form-label" for="email">Din email:</label>
-          <input
-            type="email"
-            required
-            v-validate="'required|email'"
-            class="form-field inputs"
-            name="email"
-            placeholder="namn@foretag.se"
-            onfocus="this.placeholder = ''"
-            onblur="this.placeholder = 'namn@foretag.se'"
-            v-model="email"
-            :class="{'input': true, 'is-danger': errors.has('email') }"
-          >
-          <span v-show="errors.has('email')" class="error">{{ errors.first('email') }}</span>
-        </div>
-
-        <div class="select-package hidden">
-          <p>Välj vilket paket du önskar - <em>Valfritt</em></p>
-          <div class="package-field">
-            <input type="checkbox" id="checkbox1" name="checkboxes" :value="liten" :checked="value" v-on:input="liten = $event.target.value" v-model="liten">
-            <label for="checkbox1">Liten</label>
+      <div class="content wrapper">
+        <form
+          name="contact-form"
+          action="/tack"
+          autocomplete="off"
+          netlify-honeypot="bot-field"
+          method="POST"
+          netlify
+          @submit="validateBeforeSubmit"
+        >
+          <div class="input-field">
+            <label class="form-label" for="name">Ditt namn:</label>
+            <input
+              v-validate="'required|alpha_spaces'"
+              class="form-field inputs"
+              name="namn"
+              placeholder="För- &amp; efternamn"
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'För- &amp; efternamn'"
+              required
+              v-model="namn"
+              :class="{ input: true, 'is-danger': errors.has('namn') }"
+            />
+            <span v-show="errors.has('namn')" class="error">{{
+              errors.first("namn")
+            }}</span>
+            <input type="hidden" name="form-name" value="contact-form" />
           </div>
 
-          <div class="package-field">
-            <input type="checkbox" id="checkbox2" name="checkboxes" :value="mellan" :checked="value" v-on:input="mellan = $event.target.value" v-model="mellan">
-            <label for="checkbox2">Mellan</label>
+          <div class="input-field">
+            <label class="form-label" for="email">Din email:</label>
+            <input
+              type="email"
+              required
+              v-validate="'required|email'"
+              class="form-field inputs"
+              name="email"
+              placeholder="namn@foretag.se"
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'namn@foretag.se'"
+              v-model="email"
+              :class="{ input: true, 'is-danger': errors.has('email') }"
+            />
+            <span v-show="errors.has('email')" class="error">{{
+              errors.first("email")
+            }}</span>
           </div>
 
-          <div class="package-field">
-            <input type="checkbox" id="checkbox3" name="checkboxes"    :value="stor" :checked="value" v-on:input="stor = $event.target.value" v-model="stor">
-            <label for="checkbox3">Stor</label>
+          <div class="select-package hidden">
+            <p>Välj vilket paket du önskar - <em>Valfritt</em></p>
+            <div class="package-field">
+              <input
+                type="checkbox"
+                id="checkbox1"
+                name="checkboxes"
+                :value="liten"
+                :checked="value"
+                v-on:input="liten = $event.target.value"
+                v-model="liten"
+              />
+              <label for="checkbox1">Liten</label>
+            </div>
+
+            <div class="package-field">
+              <input
+                type="checkbox"
+                id="checkbox2"
+                name="checkboxes"
+                :value="mellan"
+                :checked="value"
+                v-on:input="mellan = $event.target.value"
+                v-model="mellan"
+              />
+              <label for="checkbox2">Mellan</label>
+            </div>
+
+            <div class="package-field">
+              <input
+                type="checkbox"
+                id="checkbox3"
+                name="checkboxes"
+                :value="stor"
+                :checked="value"
+                v-on:input="stor = $event.target.value"
+                v-model="stor"
+              />
+              <label for="checkbox3">Stor</label>
+            </div>
           </div>
-        </div>
-        <div class="input-textarea">
-          <label class="form-label" for="message">Meddelande:</label>
-          <textarea
-            required
-            class="form-field inputs"
-            name="meddelande"
-            placeholder="Ditt meddelande..."
-            onfocus="this.placeholder = ''"
-            onblur="this.placeholder = 'Ditt meddelande...'"
-            v-model="meddelande"
-            v-validate="'required|min:5'"
-            :class="{'input': true, 'is-danger': errors.has('meddelande') }"
-          ></textarea>
-          <span v-show="errors.has('meddelande')" class="error">{{ errors.first('meddelande') }}</span>
-        </div>
-
-        <div class="gdpr">
-          <div class="gdpr-checkbox">
-            <input type="checkbox" id="GDPR" v-validate="'required'" value="checked" name="GDPR">
-            <label v-show="errors.has('GDPR')" class="error" for="GDPR"> Godkänn hanteringen av din personliga data.</label>
-            <label v-if="!errors.has('GDPR')" for="GDPR">Godkänn hanteringen av din personliga data.</label>
+          <div class="input-textarea">
+            <label class="form-label" for="message">Meddelande:</label>
+            <textarea
+              required
+              class="form-field inputs"
+              name="meddelande"
+              placeholder="Ditt meddelande..."
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'Ditt meddelande...'"
+              v-model="meddelande"
+              v-validate="'required|min:5'"
+              :class="{ input: true, 'is-danger': errors.has('meddelande') }"
+            ></textarea>
+            <span v-show="errors.has('meddelande')" class="error">{{
+              errors.first("meddelande")
+            }}</span>
           </div>
-          <p>Ni kan läsa mer om vår policy och vår hantering av persondata <nuxt-link to="/policy" class="gdpr-link eyebrow">här</nuxt-link></p>
-          <p>Du måste godkänna <nuxt-link class="gdpr-link eyebrow" to="/policy">hantering av persondata</nuxt-link> för att kunna skicka ditt meddelande.</p>
 
-        </div>
+          <div class="gdpr">
+            <div class="gdpr-checkbox">
+              <input
+                type="checkbox"
+                id="GDPR"
+                v-validate="'required'"
+                value="checked"
+                name="GDPR"
+              />
+              <label v-show="errors.has('GDPR')" class="error" for="GDPR">
+                Godkänn hanteringen av din personliga data.</label
+              >
+              <label v-if="!errors.has('GDPR')" for="GDPR"
+                >Godkänn hanteringen av din personliga data.</label
+              >
+            </div>
+            <p>
+              Ni kan läsa mer om vår policy och vår hantering av persondata
+              <nuxt-link to="/policy" class="gdpr-link eyebrow">här</nuxt-link>
+            </p>
+            <p>
+              Du måste godkänna
+              <nuxt-link class="gdpr-link eyebrow" to="/policy"
+                >hantering av persondata</nuxt-link
+              >
+              för att kunna skicka ditt meddelande.
+            </p>
+          </div>
 
-        <div class="form-button">
-          <input class="button" type="submit" value="Skicka meddelande">
-        </div>
-
-      </form>
+          <div class="form-button">
+            <input class="button" type="submit" value="Skicka meddelande" />
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
-</no-ssr>
+  </no-ssr>
 </template>
 
 <script>
-import vuex from "vuex"
+import vuex from "vuex";
 import { mapState, mapGetters, mapActions, mapMutations } from "vuex";
 
-
-
 export default {
-  props: ['paketText', 'underText', 'stor', 'mellan', 'liten', 'value'],
+  props: ["paketText", "underText", "stor", "mellan", "liten", "value"],
   data: () => {
-    return {
-
-    }
+    return {};
   },
   methods: {
     validateBeforeSubmit(e) {
-
       this.$validator.validate().then(result => {
         console.log(result);
         if (!result) {

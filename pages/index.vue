@@ -3,13 +3,14 @@
     <div class="hero">
       <div class="hero-container" v-on:scroll="handleScroll">
         <div class="hero-image">
-          <img src="~/assets/images/header-test2.png" alt="Bild på en hero">
+          <img src="~/assets/images/header-test2.png" alt="Bild på en hero" />
         </div>
         <div class="hero-image-text">
           <h1 class="hero-text-header">Vi skapar.</h1>
-          <h3
-            class="hero-text-lead"
-          >Rellow är en digital webbyrå som har ett starkt fokus på att ge kunden en kvalitativ lösning.</h3>
+          <h3 class="hero-text-lead">
+            Rellow är en digital webbyrå som har ett starkt fokus på att ge
+            kunden en kvalitativ lösning.
+          </h3>
         </div>
       </div>
     </div>
@@ -19,61 +20,116 @@
         <div v-scroll-reveal.nomobile class="left">
           <div class="left-text">
             <h2>Det här är vi</h2>
-            <h3>Vi jobbar ständigt på att ligga i framkant inom den senaste tekniken, allt för att ni som kunder ska få en bra och snabb webbplats.</h3>
+            <h3>
+              Vi jobbar ständigt på att ligga i framkant inom den senaste
+              tekniken, allt för att ni som kunder ska få en bra och snabb
+              webbplats.
+            </h3>
           </div>
         </div>
 
         <div class="rigth">
           <div v-scroll-reveal.nomobile>
             <h3>Logotyper</h3>
-            <p>En logga är det första som kännetecknar erat företag, det som ska göra er synbar för alla. Det ska förespråka er och erat budskap som företag. Vi vill att alla som ska äga en snygg och estetisk logga. Genom att gå igenom exempelvis vad eran verksamhet sysslar med eller vad ni vill att eran logotyp ska leverera för känsla, så kan vi snabbt börja skissa på loggan.</p>
-          </div>
-          <div v-scroll-reveal.nomobile="{delay: 100}">
-            <h3>Webbdesign</h3>
             <p>
-              Det mest huvudsakliga vi sysslar med, vi levererar högkvalitativa hemsidor till er baserade efter vad ni behöver. Vi använder oss av JAMStack. Det är utmärkt sätt att göra hemsidor. Läs mera om det under
-              <nuxt-link to="/tjanster" title="Tjänster" class="eyebrow">Tjänster</nuxt-link>
+              En logga är det första som kännetecknar erat företag, det som ska
+              göra er synbar för alla. Det ska förespråka er och erat budskap
+              som företag. Vi vill att alla som ska äga en snygg och estetisk
+              logga. Genom att gå igenom exempelvis vad eran verksamhet sysslar
+              med eller vad ni vill att eran logotyp ska leverera för känsla, så
+              kan vi snabbt börja skissa på loggan.
             </p>
           </div>
-          <div v-scroll-reveal.nomobile="{delay: 200}">
+          <div v-scroll-reveal.nomobile="{ delay: 100 }">
+            <h3>Webbdesign</h3>
+            <p>
+              Det mest huvudsakliga vi sysslar med, vi levererar högkvalitativa
+              hemsidor till er baserade efter vad ni behöver. Vi använder oss av
+              JAMStack. Det är utmärkt sätt att göra hemsidor. Läs mera om det
+              under
+              <nuxt-link to="/tjanster" title="Tjänster" class="eyebrow"
+                >Tjänster</nuxt-link
+              >
+            </p>
+          </div>
+          <div v-scroll-reveal.nomobile="{ delay: 200 }">
             <h3>Modernisering</h3>
-            <p>Har ni redan en hemsida som ni skulle vilja få uppfräschad och mer modern, hör då av dig till oss. Vi kommer tillsammans gå igenom vad ni har för mål med hemsidan. Och sedan designar vi den utefter dem.</p>
+            <p>
+              Har ni redan en hemsida som ni skulle vilja få uppfräschad och mer
+              modern, hör då av dig till oss. Vi kommer tillsammans gå igenom
+              vad ni har för mål med hemsidan. Och sedan designar vi den utefter
+              dem.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="project wrapper">
-      <div v-scroll-reveal.nomobile="{delay: 100}" class="projects">
+      <div v-scroll-reveal.nomobile="{ delay: 100 }" class="projects">
         <div class="image">
           <nuxt-link to="/projekt/tasjo">
-            <img src="~/assets/images/iPhoneMockup2.jpg" alt="Bild på ett projekt">
+            <img
+              src="~/assets/images/iPhoneMockup2.jpg"
+              alt="Bild på ett projekt"
+            />
           </nuxt-link>
         </div>
       </div>
 
-      <div v-scroll-reveal.nomobile="{delay: 200}" class="projects">
+      <div v-scroll-reveal.nomobile="{ delay: 200 }" class="projects">
         <div class="image">
           <a href="/kontakt">
-            <img src="~/assets/images/banner-rellow.png" alt="Bild på en tänd lampa">
+            <img
+              src="~/assets/images/banner-rellow.png"
+              alt="Bild på en tänd lampa"
+            />
           </a>
         </div>
       </div>
 
       <div v-scroll-reveal.nomobile class="project-text">
-        <h1 v-scroll-reveal.nomobile="{delay: 200}" class="project-text-header">Projekt</h1>
-        <nuxt-link class="button project-text-button" to="/projekt">Visa fler</nuxt-link>
+        <h1
+          v-scroll-reveal.nomobile="{ delay: 200 }"
+          class="project-text-header"
+        >
+          Projekt
+        </h1>
+        <nuxt-link class="button project-text-button" to="/projekt"
+          >Visa fler</nuxt-link
+        >
       </div>
     </section>
 
     <section class="how-we-work">
       <div class="how-we-work-text full-width">
         <div v-scroll-reveal.nomobile class="how-we-work-left">
-            <h2 v-scroll-reveal.nomobile="{delay: 200}" class="how-we-work-lead">Hur jobbar vi? <span><img style="display: inline; vertical-align: baseline; margin-left: 2px;" src="~/assets/images/coffee-cup.svg" alt="Bild på en kaffekopp"></span></h2>
-          <p
-            v-scroll-reveal.nomobile="{delay: 300}">Vi försöker både vara kreativa och tekniska i våra lösningar som ni kommer med till oss, och för att göra det så enkelt som möjligt så kommer ni få svara på några frågor som jag skicka till er. Sedan när vi sätter oss ned antigen på en kopp kaffe eller via ett samtal på Skype så kommer vi börja med att titta på vad ni har för förutsättningar och vilka era önskemål är som ni angett i formuläret. Därefter kommer vi fram till den bästa lösningen.</p>
+          <h2
+            v-scroll-reveal.nomobile="{ delay: 200 }"
+            class="how-we-work-lead"
+          >
+            Hur jobbar vi?
+            <span
+              ><img
+                style="display: inline; vertical-align: baseline; margin-left: 2px;"
+                src="~/assets/images/coffee-cup.svg"
+                alt="Bild på en kaffekopp"
+            /></span>
+          </h2>
+          <p v-scroll-reveal.nomobile="{ delay: 300 }">
+            Vi försöker både vara kreativa och tekniska i våra lösningar som ni
+            kommer med till oss, och för att göra det så enkelt som möjligt så
+            kommer ni få svara på några frågor som jag skicka till er. Sedan när
+            vi sätter oss ned antigen på en kopp kaffe eller via ett samtal på
+            Skype så kommer vi börja med att titta på vad ni har för
+            förutsättningar och vilka era önskemål är som ni angett i
+            formuläret. Därefter kommer vi fram till den bästa lösningen.
+          </p>
         </div>
-        <img src="~/assets/images/hur-vi-jobbar-v2.jpg" alt="Bild på en dator">
+        <img
+          src="~/assets/images/hur-vi-jobbar-v2.jpg"
+          alt="Bild på en dator"
+        />
       </div>
     </section>
 
@@ -82,20 +138,21 @@
         <div class="row">
           <div class="gold-lead">
             <h2 v-scroll-reveal.nomobile>Prispaket</h2>
-            <p
-              v-scroll-reveal.nomobile="{delay: 300}"
-            >Vi erbjuder förmånliga paketlösningar som ska passa just för erat behov.</p>
+            <p v-scroll-reveal.nomobile="{ delay: 300 }">
+              Vi erbjuder förmånliga paketlösningar som ska passa just för erat
+              behov.
+            </p>
           </div>
         </div>
 
         <div class="paket">
-          <div v-scroll-reveal.nomobile="{delay: 200}" class="column one">
+          <div v-scroll-reveal.nomobile="{ delay: 200 }" class="column one">
             <div class="box-lead">
               <h3>Liten</h3>
               <!-- <p>Underhåll: Gratis</p> -->
             </div>
             <div class="box">
-              <img src="~/assets/images/box.svg" alt="Bild på låda">
+              <img src="~/assets/images/box.svg" alt="Bild på låda" />
             </div>
             <div class="box-text">
               <p>Om du behöver en snabb lösning</p>
@@ -105,12 +162,8 @@
                 <li class="icon-check">
                   <strong>Undersidor:</strong> Upp till 4 st
                 </li>
-                <li class="icon-check nope">
-                  <strong>Design:</strong> Unik
-                </li>
-                <li class="icon-check">
-                  <strong>Design:</strong> Mall
-                </li>
+                <li class="icon-check nope"><strong>Design:</strong> Unik</li>
+                <li class="icon-check"><strong>Design:</strong> Mall</li>
                 <li class="icon-check nope">
                   <strong>Seo:</strong> Enklare sökmotoroptimering
                 </li>
@@ -122,20 +175,18 @@
             </div>
             <nuxt-link to="/lillapaketet" class="linkPaket">
               <div class="pris">
-                <div>
-                  <span>Från 9 000 kr</span> <em>exkl moms</em>
-                </div>
+                <div><span>Från 9 000 kr</span> <em>exkl moms</em></div>
               </div>
             </nuxt-link>
           </div>
 
-          <div v-scroll-reveal.nomobile="{delay: 300}" class="column two">
+          <div v-scroll-reveal.nomobile="{ delay: 300 }" class="column two">
             <div class="box-lead">
               <h3>Mellan</h3>
               <!-- <p>Underhåll: 600kr/mån</p> -->
             </div>
             <div class="box">
-              <img src="~/assets/images/trolley.svg" alt="Bild på låda">
+              <img src="~/assets/images/trolley.svg" alt="Bild på låda" />
             </div>
             <div class="box-text">
               <p>För dig som behöver det lilla extra</p>
@@ -145,9 +196,7 @@
                 <li class="icon-check">
                   <strong>Undersidor:</strong> Upp till 7 st
                 </li>
-                <li class="icon-check">
-                  <strong>Design:</strong> Unik
-                </li>
+                <li class="icon-check"><strong>Design:</strong> Unik</li>
                 <li class="icon-check">
                   <strong>Seo:</strong> Enklare sökmotoroptimering
                 </li>
@@ -159,20 +208,18 @@
             </div>
             <nuxt-link to="/mellanpaketet" class="linkPaket">
               <div class="pris">
-                <div>
-                  <span>Från 12 000 kr</span> <em>exkl moms</em>
-                </div>
+                <div><span>Från 12 000 kr</span> <em>exkl moms</em></div>
               </div>
             </nuxt-link>
           </div>
 
-          <div v-scroll-reveal.nomobile="{delay: 400}" class="column three">
+          <div v-scroll-reveal.nomobile="{ delay: 400 }" class="column three">
             <div class="box-lead">
               <h3>Stor</h3>
               <!-- <p>Underhåll: 800kr/mån</p> -->
             </div>
             <div class="box">
-              <img src="~/assets/images/package.svg" alt="Bild på låda">
+              <img src="~/assets/images/package.svg" alt="Bild på låda" />
             </div>
             <div class="box-text">
               <p>Offert</p>
@@ -182,12 +229,8 @@
                 <li class="icon-check">
                   <strong>Undersidor:</strong> Över 7 st
                 </li>
-                <li class="icon-check">
-                  <strong>Design:</strong> Unik
-                </li>
-                <li class="icon-check">
-                  <strong>Support:</strong> 6 månader
-                </li>
+                <li class="icon-check"><strong>Design:</strong> Unik</li>
+                <li class="icon-check"><strong>Support:</strong> 6 månader</li>
                 <li class="icon-check">
                   <strong>Seo:</strong> Avancerad sökmotoroptimering
                 </li>
@@ -208,8 +251,6 @@
         </div>
       </div>
     </section>
-
-
   </section>
 </template>
 
@@ -260,23 +301,15 @@ export default {
 <style lang="sass">
 .linkPaket
   display: block
-
 .hero
   position: relative
-  /* background: linear-gradient(to left, #ffa17f, #6aa3ad) */
-  /* background: #83a4d4 */
-  /* background: linear-gradient(to right, #83a4d4, #b6fbff) */
-  background: rgb(234,234,234)
-  background: -moz-linear-gradient(180deg, rgba(234,234,234,1) 0%, rgba(255,255,255,1) 100%)
-  background: -webkit-linear-gradient(180deg, rgba(234,234,234,1) 0%, rgba(255,255,255,1) 100%)
-  background: linear-gradient(180deg, rgba(234,234,234,1) 0%, rgba(255,255,255,1) 100%)
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eaeaea",endColorstr="#ffffff",GradientType=1)
-
+  background: linear-gradient(120deg, #83a4d4 0%,#b6fbff 100%)
   overflow: hidden
   .hero-container
     display: flex
     height: 100vh
     will-change: transform
+    align-items: center
     @media screen and (max-width: 820px)
       flex-direction: column
       justify-content: center
@@ -558,5 +591,4 @@ export default {
     // FOOTER
 .underline
   font-weight: bold
-
 </style>
