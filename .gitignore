@@ -13,3 +13,5 @@ sw.*
 .nuxt 2
 .nuxt
 .vscode
+# Local Netlify folder
+.netlify

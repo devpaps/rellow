@@ -3,19 +3,19 @@
     <Contact
       paketText="Mellan paketet"
       underText="Här får du ett heltäckande paket som tar dig långt på webben. En unik design och en bra sökmotoroptimering."
-      mellan="true"
-      value="checked"
+      value="mellan_valt"
+      name="mellan[]"
     />
   </div>
 </template>
 
 <script>
-import Contact from "@/components/Contact";
+import Contact from '@/components/Contact'
 export default {
   components: {
     Contact
   }
-};
+}
 </script>
 
 <style lang="sass" scoped></style>
