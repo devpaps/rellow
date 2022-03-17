@@ -57,17 +57,17 @@
         <div class="select-package">
           <p>Välj vilket paket du önskar - <em>Valfritt</em></p>
           <div class="package-field">
-            <input type="checkbox" id="checkbox1" name="whichPackage" value="liten"/>
+            <input type="checkbox" id="checkbox1" name="whichPackage" value="liten_vald"/>
             <label for="checkbox1">Liten</label>
           </div>
 
           <div class="package-field">
-            <input type="checkbox" id="checkbox2" name="checkboxes" />
+            <input type="checkbox" id="checkbox2" name="whichPackage" value="mellan_vald"/>
             <label for="checkbox2">Mellan</label>
           </div>
 
           <div class="package-field">
-            <input type="checkbox" id="checkbox3" name="checkboxes" />
+            <input type="checkbox" id="checkbox3" name="whichPackage" value="stor_vald"/>
             <label for="checkbox3">Stor</label>
           </div>
         </div>
