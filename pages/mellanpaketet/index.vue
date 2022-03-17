@@ -3,6 +3,7 @@
     <Contact
       paketText="Mellan paketet"
       underText="Här får du ett heltäckande paket som tar dig långt på webben. En unik design och en bra sökmotoroptimering."
+      mellan="true"
       value="mellan_valt"
       name="mellan[]"
     />
