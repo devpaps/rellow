@@ -160,7 +160,7 @@
             <div class="box-list">
               <ul class="fa-ul">
                 <li class="icon-check">
-                  <strong>Undersidor:</strong> Upp till 4 st
+                  <strong>Undersidor:</strong> Upp till 7 st
                 </li>
                 <li class="icon-check nope"><strong>Design:</strong> Unik</li>
                 <li class="icon-check"><strong>Design:</strong> Mall</li>
@@ -175,7 +175,7 @@
             </div>
             <nuxt-link to="/lillapaketet" class="linkPaket">
               <div class="pris">
-                <div><span>Från 18 000 kr</span> <em>exkl moms</em></div>
+                <div><span>Från 19 000 kr</span> <em>exkl moms</em></div>
               </div>
             </nuxt-link>
           </div>
@@ -194,7 +194,7 @@
             <div class="box-list">
               <ul class="fa-ul">
                 <li class="icon-check">
-                  <strong>Undersidor:</strong> Upp till 7 st
+                  <strong>Undersidor:</strong> Upp till 10 st
                 </li>
                 <li class="icon-check"><strong>Design:</strong> Unik</li>
                 <li class="icon-check">
@@ -208,7 +208,7 @@
             </div>
             <nuxt-link to="/mellanpaketet" class="linkPaket">
               <div class="pris">
-                <div><span>Från 22 000 kr</span> <em>exkl moms</em></div>
+                <div><span>Från 23 000 kr</span> <em>exkl moms</em></div>
               </div>
             </nuxt-link>
           </div>
@@ -227,7 +227,7 @@
             <div class="box-list">
               <ul class="fa-ul">
                 <li class="icon-check">
-                  <strong>Undersidor:</strong> Över 7 st
+                  <strong>Undersidor:</strong> Över 10 st
                 </li>
                 <li class="icon-check"><strong>Design:</strong> Unik</li>
                 <li class="icon-check"><strong>Support:</strong> 6 månader</li>
