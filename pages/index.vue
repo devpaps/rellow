@@ -175,7 +175,7 @@
             </div>
             <nuxt-link to="/lillapaketet" class="linkPaket">
               <div class="pris">
-                <div><span>Från 9 000 kr</span> <em>exkl moms</em></div>
+                <div><span>Från 18 000 kr</span> <em>exkl moms</em></div>
               </div>
             </nuxt-link>
           </div>
@@ -208,7 +208,7 @@
             </div>
             <nuxt-link to="/mellanpaketet" class="linkPaket">
               <div class="pris">
-                <div><span>Från 12 000 kr</span> <em>exkl moms</em></div>
+                <div><span>Från 22 000 kr</span> <em>exkl moms</em></div>
               </div>
             </nuxt-link>
           </div>
