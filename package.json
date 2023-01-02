@@ -20,7 +20,7 @@
     "aos": "^3.0.0-beta.4",
     "express": "^4.17.1",
     "normalize.css": "^8.0.0",
-    "nuxt": "^2.15.7",
+    "nuxt": "^3.0.0",
     "nuxt-imagemin": "^1.0.0",
     "nuxt-validate": "^1.0.1",
     "reboot.css": "^1.0.1",
